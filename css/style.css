@@ -1,0 +1,291 @@
+body, html {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+
+}
+
+
+:root {
+    --primary-white: white;
+    --primary-1:#799EFF;
+    --primary-2:#FEFFC4;
+    --primary-3:#FFDE63;
+    --primary-4:#FFBC4C;
+    --border-test: 1px solid violet;
+    --font-color: gray;
+    --margin-nav:100px;
+    --padding-right:20px;
+    --shadow: 8px 5px 5px 0px darkgray;
+    --max-width: 1100px;
+    --img-text:var(--primary-2);
+    --border-radius: 10px; 
+
+
+}
+
+li {
+        list-style-type: none;
+}
+
+a {
+        text-decoration: none;
+}
+    
+a:hover {
+        text-decoration: none;
+}
+
+.container-nav {
+    border: var(--border-test);
+    display: flex;
+    flex-direction: row;
+    background-color:lightcyan;
+    height: var(--margin-nav);
+    position: relative;
+
+
+}
+
+
+.nav-logo {
+    border: var(--border-test);
+    width:15%;
+    height: var(--margin-nav);
+
+    img {
+        padding: 5px;
+        height: 80px;
+    }
+}
+
+.nav-menu {
+
+    border: var(--border-test);
+    flex: 1 0 auto;
+    height: var(--margin-nav);
+    
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+
+        li {
+            padding-top: 40px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: red;        
+    }
+    
+}
+
+
+.nav-burger {
+    border: var(--border-test);
+    width: 15%;    
+    height: var(--margin-nav);
+    display: none;
+
+
+    i {
+        padding-top: 35px; 
+        padding-right: var(--padding-right);    
+        position: absolute;
+        top:0;
+        right:0px;   
+    }
+    
+
+}
+
+
+.container-main {
+    border: var(--border-test);
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    height: 100%;
+    position: relative;
+
+}
+
+.mobile-list {
+    border: var(--border-test);
+    width:8rem;
+    position: absolute;
+    top:0;
+    right: -100px;
+    padding-right: var(--padding-right);   
+
+    li {
+        padding: 10px;        
+    }
+    
+}
+
+
+
+.container-grid {
+    border: var(--border-test);
+    border: 3px solid red;
+    display: grid;
+    width: 80vw;
+    max-width: var(--max-width);
+    margin: 10px auto;
+    grid-template-columns: repeat(2,1fr);
+
+    align-items: center;
+    
+    .img-main {
+        margin-top: var(--margin-nav);
+        /* border: var(--border-test); */
+        width: 70%;
+        min-width: 300px;
+        margin: 2rem;
+        /* box-shadow: var(--shadow); */
+        position: relative;
+        
+
+        img {
+            width: 100%;
+            filter: blur(2px);
+        }
+
+    }
+
+    .img-main img:hover {
+    
+        filter: blur(0);
+        transform: scale(1.1);
+        transition: 1s;
+        box-shadow: var(--shadow);
+    }
+
+}
+
+
+.img-japan::before {
+    position: absolute;
+    content: "東京";
+    text-align: center;
+    padding: 0%;
+    color:var(--img-text);
+    font-size: 2rem;
+    font-weight: 600;
+    top:calc(85%/2);
+    right: calc(85%/2);
+    z-index: 1;
+  
+}
+
+.img-seoul::before {
+    position: absolute;
+    content: "首爾";
+    text-align: center;
+    padding: 0%;
+    color:var(--img-text);
+    font-size: 2rem;
+    font-weight: 600;
+    top:calc(85%/2);
+    right: calc(85%/2);
+    z-index: 1;
+  
+}
+
+.img-bangkok::before {
+    position: absolute;
+    content: "倫敦";
+    text-align: center;
+    padding: 0%;
+    color:var(--img-text);
+    font-size: 2rem;
+    font-weight: 600;
+    top:calc(85%/2);
+    right: calc(85%/2);
+    z-index: 1;
+  
+}
+
+
+.img-london::before {
+    position: absolute;
+    content: "曼谷";
+    text-align: center;
+    padding: 0%;
+    color:var(--img-text);
+    font-size: 2rem;
+    font-weight: 600;
+    top:calc(85%/2);
+    right: calc(85%/2);
+    z-index: 1;
+  
+}
+
+@media (max-width:600px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-burger {
+        display: block;
+    }
+
+    .container-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+.container-gallery {
+
+    border: var(--border-test);
+    width:80%;
+    max-width: 700px;
+    min-width: 400px;
+    margin: var(--margin-nav) auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    padding: 20px;
+    color: var(--primary-white);
+    box-shadow: var(--shadow);
+
+
+}
+
+.carousel {
+
+}
+
+.title {
+    width:100%;
+    text-align: center;
+}

@@ -13,6 +13,13 @@ body {
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
+    position: relative;
+    background-image: url(/img/background.png);
+    /* background-position: fixed; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 
 }
 
@@ -26,9 +33,10 @@ body {
     --primary-4:#6e03b6;
     --primary-5:#b60312b7;
     --primary-6:darkblue;
+    --primary-7:lightblue;
     --border-test: 1px solid violet;
     --font-color: gray;
-    --margin-nav:100px;
+    --margin-nav:80px;
     --padding-right:20px;
     --shadow: 8px 5px 5px 0px darkgray;
     --max-width: 1100px;
@@ -52,11 +60,14 @@ a:hover {
 
 .container-nav {
     border: var(--border-test);
+    width: 100%;
     display: flex;
     flex-direction: row;
-    background-color:var(--primary-6);
+    background-color:var(--primary-4);
     height: var(--margin-nav);
-    position: relative;
+    position: fixed;
+    z-index: 5;
+
 
 
 }
@@ -66,12 +77,16 @@ a:hover {
     border: var(--border-test);
     width:15%;
     height: var(--margin-nav);
+    position: relative;
+
 
     img {
         padding: 5px;
         height: 80px;
     }
 }
+
+
 
 .nav-menu {
 
@@ -88,18 +103,20 @@ a:hover {
 
 
         li {
-            padding-top: 40px;
+            padding-top: 30px;
             margin: 0 auto;
             text-align: center;
+
         }
     }
 
     a {
         text-decoration: none;
+        color: var(--primary-white);
     }
 
     a:hover {
-        color: red;        
+        color: lightcoral;        
     }
     
 }
@@ -113,7 +130,7 @@ a:hover {
 
 
     i {
-        padding-top: 35px; 
+        padding-top: 20px; 
         padding-right: var(--padding-right);    
         position: absolute;
         top:0;
@@ -124,13 +141,50 @@ a:hover {
 }
 
 
+
+.footer {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-6);
+    color: var(--primary-white);
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin:0;
+        
+    }
+
+    li {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+
+    p {
+        font-size: 0.7rem;
+    }
+
+}
+
+
 .container-main {
     border: var(--border-test);
+    padding: 0 auto;
+    padding-top: var(--margin-nav);
     display: flex;
     flex-direction: row;
-    background-color:white;
     height: 100%;
     position: relative;
+    /* background-image: url(/img/background.png);
+    /* background-position: fixed; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-size: cover;  */
+
 
 }
 
@@ -138,10 +192,9 @@ a:hover {
     border: var(--border-test);
     width:8rem;
     position: absolute;
+    background-color: var(--primary-6);
     top:0;
     right:0;
-    /* right: -100px; */
-    padding-right: var(--padding-right);
     display: none;   
 
     li {
@@ -239,7 +292,7 @@ a:hover {
 .gallery {
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
+
 }
 
 
@@ -253,11 +306,11 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:white;
+    background-color:var(--primary-white);
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    background-color: var(--primary-7);
     padding: 20px;
     color: var(--primary-white);
     box-shadow: var(--shadow);
@@ -277,6 +330,7 @@ a:hover {
 }
 
 
+
 .container-sight {
     border: var(--border-test);
     padding: var(--margin-nav) calc(var(--margin-nav)/2);
@@ -290,12 +344,18 @@ a:hover {
     justify-content: center;
     align-items: start;
 
+    .card {
+    box-shadow: var(--shadow);
+    }
+
+
 }
 
 .card-body-sight {
     height: 15rem;
     min-width: 8rem;
     max-width: 18rem;
+
 }
 
 
@@ -309,9 +369,7 @@ a:hover {
 }
 
 
-.gallery {
-    background-color: lightyellow;
-}
+
 
 
 .container-gallery {
@@ -334,18 +392,24 @@ a:hover {
 
 
 .container-weather {
+
     border: var(--border-test);
-    background-image: linear-gradient(to right,white,lightcyan,white);
-    padding: var(--margin-nav);
-    width: 100%;
-    height: 100%;
+    width:100%;
+    max-width: 700px;
+    min-width: 400px;
+    margin: var(--margin-nav) auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-2);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    margin-bottom: 0;
+    border-radius: 5%;
 
-    h2 {
-        justify-content: center;
-        text-align: center;
-
-    }
 
 }
 
@@ -358,19 +422,45 @@ a:hover {
 }
 
 
-.footer {
-    padding: 20px;
-    height: var(--margin-nav);
-    width: 100%;
-    text-align: center;
-    background-color: var(--primary-6);
-    color: var(--primary-white);
 
-    ul {
+.about {
+
+    border: var(--border-test);
+    width:100%;
+    height: 100%;
+    max-width: 700px;
+    min-width: 400px;
+    margin: var(--margin-nav) auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:start;
+    background-color: var(--primary-white);
+    padding: 30px;
+    margin-bottom: 0;
+
+    iframe {
+            box-shadow: var(--shadow);
+    }
+
+    p {
+        line-height: 1rem;
+    }
+
+    span {
+        font-weight: 600;
+    }
+
+    .map {
         display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
-        
+        padding: 2rem;
+        width: 100%;
+        height: 400px;
+        margin: 20px 0;
     }
 }
+
+

@@ -25,6 +25,7 @@ body {
     --primary-4:#FFBC4C;
     --primary-4:#6e03b6;
     --primary-5:#b60312b7;
+    --primary-6:darkblue;
     --border-test: 1px solid violet;
     --font-color: gray;
     --margin-nav:100px;
@@ -53,7 +54,7 @@ a:hover {
     border: var(--border-test);
     display: flex;
     flex-direction: row;
-    background-color:lightcyan;
+    background-color:var(--primary-6);
     height: var(--margin-nav);
     position: relative;
 
@@ -291,11 +292,10 @@ a:hover {
 
 }
 
-.sight {
+.card-body-sight {
+    height: 15rem;
     min-width: 8rem;
     max-width: 18rem;
-    height: 30rem;
-    
 }
 
 
@@ -303,7 +303,7 @@ a:hover {
     font-size: 1.3rem;
 }
 
-.sight h2::first-letter {
+.sight h2::first-line {
     font-size: 1.5rem;
     color: var(--primary-5);
 }
@@ -355,4 +355,22 @@ a:hover {
     display:block;
     width:100%;
     text-align: center;
+}
+
+
+.footer {
+    padding: 20px;
+    height: var(--margin-nav);
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-6);
+    color: var(--primary-white);
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
 }

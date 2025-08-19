@@ -1,17 +1,17 @@
 import React from 'react'
 
-import { sightsTokyo } from '../data';
+import { sightsBangkok } from '../data';
 import Sight from './Sight';
 
-function SightTokyo() {
+function SightBangkok() {
   return (
         <section className="container-sight">
 
 
-                <h2 className="title">新手必到精選景點 - 東京</h2>        
+                <h2 className="title">新手必到精選景點 - 曼谷</h2>        
 
 
-                {sightsTokyo.map((sight) => (
+                {sightsBangkok.map((sight) => (
                     <Sight 
                         key={sight.id}
                         image={sight.image}
@@ -27,4 +27,4 @@ function SightTokyo() {
     )
 }
 
-export default SightTokyo
+export default SightBangkok

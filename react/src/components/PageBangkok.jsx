@@ -1,24 +1,28 @@
 import React from 'react';
-import HistoryTokyo from './HistoryTokyo';
-import WeatherTokyo from './WeatherTokyo'; 
-import SightTokyo from './SightTokyo';
+import Navbar from './Navbar';
+import HistoryBangkok from './HistoryBangkok';
+import WeatherBangkok from './WeatherBangkok'; 
+import SightBangkok from './SightBangkok';
 import Footer from './Footer';
+import { Nav } from 'react-bootstrap';
 
 
 
-function Page() {
+function PageBangkok() {
   return (
+        
 
-    <div class="tokyo">
+    <div className="bangkok">
 
-        <HistoryTokyo />
-        <WeatherTokyo />
-        <SightTokyo />
-        <Footer /> 
+        <Navbar />
+        <HistoryBangkok />
+        <WeatherBangkok />
+        <SightBangkok />
+        <Footer />
 
 
-        {/* <section class="container-weather">
-                    <div class="weather">
+        {/* <section className="container-weather">
+                    <div className="weather">
                         <h2>東京天氣</h2>
                         <br/>
                             <p>春季（3月至5月）： 氣溫適中，是賞櫻的好時節。 3月氣溫逐漸回升，但早晚仍有涼意，建議穿著薄外套或針織衫。 4月櫻花盛開，氣溫更為舒適，可以穿著輕便的春裝，但仍需留意日夜溫差。 5月氣溫約在15-23°C，適合賞花和戶外活動。</p>
@@ -32,37 +36,37 @@ function Page() {
 
         </section> */}
 
-        {/* <section class="container-sight">
+        {/* <section className="container-sight">
 
 
-                <h2 class="title">新手必到精選景點 - 東京</h2>        
+                <h2 className="title">新手必到精選景點 - 東京</h2>        
 
-                <div class="card sight">
-                    <img src={tokyo1} class="card-img-top" alt="..."/>
-                    <div class="card-body card-body-sight">
+                <div className="card sight">
+                    <img src={tokyo1} className="card-img-top" alt="..."/>
+                    <div className="card-body card-body-sight">
                         <h2>淺草寺</h2>
-                        <p class="card-text">東京最古老的寺廟，入口的「雷門」大燈籠是必拍地標。參拜後可逛「仲見世通」商店街，買人形燒、和風小物。從地鐵淺草站步行即達，周邊有和服租借體驗。</p>
+                        <p className="card-text">東京最古老的寺廟，入口的「雷門」大燈籠是必拍地標。參拜後可逛「仲見世通」商店街，買人形燒、和風小物。從地鐵淺草站步行即達，周邊有和服租借體驗。</p>
                     </div>
                 </div>
 
-                <div class="card sight">
-                    <img src={tokyo2} class="card-img-top" alt="..."/>
-                    <div class="card-body card-body-sight">
+                <div className="card sight">
+                    <img src={tokyo2} className="card-img-top" alt="..."/>
+                    <div className="card-body card-body-sight">
                         <h2>晴空塔</h2>
-                        <p class="card-text">世界第二高塔，634公尺高，360度俯瞰東京全景。晴空塔商場「Solamachi」還有寶可夢專賣店、傳統工藝品店。地鐵線押上站直達，建議提前購票避開排隊。</p>
+                        <p className="card-text">世界第二高塔，634公尺高，360度俯瞰東京全景。晴空塔商場「Solamachi」還有寶可夢專賣店、傳統工藝品店。地鐵線押上站直達，建議提前購票避開排隊。</p>
                     </div>
                 </div>
 
-                <div class="card sight">
-                    <img src={tokyo3} class="card-img-top" alt="..."/>
-                    <div class="card-body card-body-sight">
+                <div className="card sight">
+                    <img src={tokyo3} className="card-img-top" alt="..."/>
+                    <div className="card-body card-body-sight">
                         <h2>明治神宮</h2>
-                        <p class="card-text">隱藏在澀谷區的森林神社，感受都市中的寧靜。幸運的話能看到傳統日式婚禮，入口的巨型鳥居很壯觀。從原宿站步行5分鐘即到，免費參拜，適合清晨或午後散步。</p>
+                        <p className="card-text">隱藏在澀谷區的森林神社，感受都市中的寧靜。幸運的話能看到傳統日式婚禮，入口的巨型鳥居很壯觀。從原宿站步行5分鐘即到，免費參拜，適合清晨或午後散步。</p>
                     </div>
                 </div>
         </section> */}
 
-        <section class="gallery">
+        <section className="gallery">
 
             {/* <Carousel>
             <Carousel.Item>
@@ -98,4 +102,4 @@ function Page() {
   )
 }
 
-export default Page
+export default PageBangkok

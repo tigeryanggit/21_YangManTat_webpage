@@ -2,8 +2,8 @@ import React from 'react'
 
 function WeatherTokyo() {
   return (
-        <section class="container-weather">
-                    <div class="weather">
+        <section className="container-weather">
+                    <div className="weather">
                         <h2>東京天氣</h2>
                         <br/>
                             <p>春季（3月至5月）： 氣溫適中，是賞櫻的好時節。 3月氣溫逐漸回升，但早晚仍有涼意，建議穿著薄外套或針織衫。 4月櫻花盛開，氣溫更為舒適，可以穿著輕便的春裝，但仍需留意日夜溫差。 5月氣溫約在15-23°C，適合賞花和戶外活動。</p>

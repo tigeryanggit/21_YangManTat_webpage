@@ -4,17 +4,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Page from './components/Page';
+import PageTokyo from './components/PageTokyo';
+import PageSeoul from './components/PageSeoul';
+import PageBangkok from './components/PageBangkok';
+import PageLondon from './components/PageLondon';  
+import About from './components/About';   
+
 
 
 function App() {
 
   return (
     <>
-      <Navbar />
+
       <Main />
-      <Footer />
-      <Page />
+      <PageTokyo />
+      <PageSeoul />
+      <PageBangkok />
+      <PageLondon />
+      <About />
 
     </>
   ) 

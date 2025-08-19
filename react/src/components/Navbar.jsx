@@ -4,14 +4,14 @@ import logo from "/src/assets/Logo.png";
 function Navbar() {
   return (
     
-    <nav class="container-nav">
-        <div class="nav-logo">
+    <nav className="container-nav">
+        <div className="nav-logo">
             <img src={logo} alt=""/>
         </div>
 
-        <div class="nav-menu">
+        <div className="nav-menu">
             <ul>
-                <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                <li><a href=""><i className="fa-solid fa-house"></i></a></li>
                 <li><a href="">東京</a></li>
                 <li><a href="">首爾</a></li>
                 <li><a href="">曼谷</a></li>
@@ -21,8 +21,8 @@ function Navbar() {
         </div>
 
 
-        <div class="nav-burger">
-            <a href=""><i class="fa-solid fa-bars fa-2x"></i></a>
+        <div className="nav-burger">
+            <a href=""><i className="fa-solid fa-bars fa-2x"></i></a>
         </div>
 
     </nav>

@@ -66,6 +66,7 @@ a:hover {
     background-color:var(--primary-4);
     height: var(--margin-nav);
     position: fixed;
+    top:0;
     z-index: 5;
 
 

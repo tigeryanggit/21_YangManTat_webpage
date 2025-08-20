@@ -5,6 +5,8 @@ function HistoryBangkok() {
   return (
         <section className="container-history">
 
+            <h2 className="title">曼谷</h2>
+
                 <div className="card">
                     <img src={historybangkok} className="card-img-top" alt="..."/>
                     <div className="card-body">

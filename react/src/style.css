@@ -178,7 +178,7 @@ a:hover {
 .container-main {
     border: var(--border-test);
     padding: 0 auto;
-    padding-top: var(--margin-nav);
+    margin-top: var(--margin-nav);
     width:100vw;
     /* display: flex;
     flex-direction: row; */
@@ -202,12 +202,18 @@ a:hover {
     background-color: var(--primary-6);
     top:0;
     right:0;
-    display: none;   
+    /* display: none;    */
 
     li {
-        padding: 10px;        
+        padding: 10px;
+        text-decoration: none;
     }
     
+    a {
+        text-decoration: none;
+        color: var(--primary-white)
+    }
+
 }
 
 
@@ -326,6 +332,7 @@ a:hover {
     color: var(--primary-white);
     box-shadow: var(--shadow);
     margin-bottom: 0;
+    opacity: 0.8;
 
     .card-title::first-letter {
     font-size: 2.5rem;
@@ -436,7 +443,11 @@ a:hover {
 .title {
     display:block;
     width:100%;
+    color: var(--primary-4);
     text-align: center;
+    font-family: "Stick", sans-serif;
+    font-weight: 500;    
+    font-size: 2.8rem;
 }
 
 
@@ -445,6 +456,7 @@ a:hover {
 
     border: var(--border-test);
     width:100%;
+    padding: 20px;
     height: calc(100vh - var(--margin-nav));
     max-width: 700px;
     min-width: 400px;
@@ -454,15 +466,18 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items:start;
-    background-color: var(--primary-white);
-    padding: 30px;
-    margin-bottom: 0;
+
+    /* background-color: var(--primary-white); */
+
+
+    font-size: 1.2rem;
 
     iframe {
             box-shadow: var(--shadow);
     }
 
     p {
+        padding: 0 2rem;
         line-height: 1rem;
     }
 
@@ -481,6 +496,9 @@ a:hover {
     }
 }
 
-
+.mobile-menu-items.active {
+    transform:translateX(300%);
+    z-index: 1;
+}
 
 

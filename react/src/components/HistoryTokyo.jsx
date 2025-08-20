@@ -4,6 +4,8 @@ import historytokyo from "../assets/history/history-tokyo.jpg";
 function HistoryTokyo() {
   return (
         <section className="container-history">
+          
+            <h2 className="title">東京</h2>
 
                 <div className="card">
                     <img src={historytokyo} className="card-img-top" alt="..."/>

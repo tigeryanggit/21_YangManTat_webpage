@@ -5,6 +5,8 @@ function HistorySeoul() {
   return (
         <section className="container-history">
 
+            <h2 className="title">首爾</h2>
+            
                 <div className="card">
                     <img src={historyseoul} className="card-img-top" alt="..."/>
                     <div className="card-body">

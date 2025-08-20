@@ -5,6 +5,8 @@ function HistoryLondon() {
   return (
         <section className="container-history">
 
+            <h2 className="title">倫敦</h2>
+            
                 <div className="card">
                     <img src={historylondon} className="card-img-top" alt="..."/>
                     <div className="card-body">

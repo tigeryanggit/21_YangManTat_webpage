@@ -12,9 +12,12 @@ function Main() {
   return (
 
     <>
-    
+
         {/* <Navbar /> */}
         <main className="container-main">
+
+            <h2>飛love腳毛</h2>
+            <p>本網站主要為你介紹其中4個港人10大熱愛的旅遊景點,唔知你又有無係呢幾個城巿留低幾條腳毛呢? 如果你係第一次去,就要留意下我推的景點啦!!!真係好啱打卡架~~~</p>
 
 
             <div className="container-grid">

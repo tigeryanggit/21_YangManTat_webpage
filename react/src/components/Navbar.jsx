@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react';
 import logo from "/src/assets/Logo.png";
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import ScrollToTop from "./ScrollToTop";
 import PageTokyo from "../components/PageTokyo";
 import PageSeoul from "../components/PageSeoul";
 import PageBangkok from "../components/PageBangkok";
@@ -19,6 +20,7 @@ const Navbar = () => {
   return (
 
     <BrowserRouter> 
+        <ScrollToTop/>
             <nav className="container-nav">
                 <div className="nav-logo">
                     <img src={logo} alt=""/>
@@ -46,12 +48,12 @@ const Navbar = () => {
                     isToggle ? "mobile-list active":"mobile-list"
                 } >
                     <ul>
-                                    <li><Link to="/">首頁</Link></li>
-                                    <li><Link to="/tokyo">東京</Link></li>
-                                    <li><Link to="/seoul">首爾</Link></li>
-                                    <li><Link to="/bangkok">曼谷</Link></li>
-                                    <li><Link to="/london">倫敦</Link></li>
-                                    <li><Link to="/about">關於</Link></li>
+                                    <li><Link to="/" onClick={handleToggle}>首頁</Link></li>
+                                    <li><Link to="/tokyo" onClick={handleToggle}>東京</Link></li>
+                                    <li><Link to="/seoul" onClick={handleToggle}>首爾</Link></li>
+                                    <li><Link to="/bangkok" onClick={handleToggle}>曼谷</Link></li>
+                                    <li><Link to="/london" onClick={handleToggle}>倫敦</Link></li>
+                                    <li><Link to="/about" onClick={handleToggle}>關於</Link></li>
                     </ul>
                 </div>
 

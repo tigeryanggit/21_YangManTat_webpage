@@ -7,7 +7,7 @@ function About() {
   return (
 
     <>
-        <Navbar />
+        {/* <Navbar /> */}
             <section class="about" id="about">
 
                 <h2 class="title">關於我們</h2>

@@ -19,7 +19,7 @@ function Navbar() {
 
                 <div className="nav-menu">
                     <ul>
-                        <li><a href=""><i className="fa-solid fa-house"></i></a></li>
+                        <li><Link to="/"><i className="fa-solid fa-house"></i></Link></li>
                         <li><Link to="/tokyo">東京</Link></li>
                         <li><Link to="/seoul">首爾</Link></li>
                         <li><Link to="/bangkok">曼谷</Link></li>
@@ -38,6 +38,7 @@ function Navbar() {
         <Routes>
 
             {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Main />} />
             <Route path="/tokyo" element={<PageTokyo />} />
             <Route path="/seoul" element={<PageSeoul />} />
             <Route path="/bangkok" element={<PageBangkok />} />

@@ -14,7 +14,7 @@ function PageTokyo() {
 
     <div className="tokyo">
 
-        <Navbar />
+        {/* <Navbar /> */}
         <HistoryTokyo />
         <WeatherTokyo />
         <SightTokyo />

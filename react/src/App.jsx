@@ -16,8 +16,8 @@ function App() {
 
   return (
     <>
-
-      <Main />
+      <Navbar />
+      {/* <Main /> */}
       {/* <PageTokyo /> */}
       {/* <PageSeoul /> */}
       {/* <PageBangkok /> */}

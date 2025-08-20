@@ -14,7 +14,7 @@ function PageLondon() {
 
     <div className="london">
 
-        <Navbar />
+        {/* <Navbar /> */}
         <HistoryLondon />
         <WeatherLondon />
         <SightLondon />

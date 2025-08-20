@@ -11,7 +11,7 @@ function Main() {
   return (
 
     <>
-        <Navbar />
+        {/* <Navbar /> */}
         <main className="container-main">
             <div className="mobile-list">
                 <ul>

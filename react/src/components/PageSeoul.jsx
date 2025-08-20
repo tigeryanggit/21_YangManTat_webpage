@@ -14,7 +14,7 @@ function PageSeoul() {
 
     <div className="seoul">
 
-        <Navbar />
+        {/* <Navbar /> */}
         <HistorySeoul />
         <WeatherSeoul />
         <SightSeoul />

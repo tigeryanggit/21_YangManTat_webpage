@@ -14,7 +14,7 @@ function PageBangkok() {
 
     <div className="bangkok">
 
-        <Navbar />
+        {/* <Navbar /> */}
         <HistoryBangkok />
         <WeatherBangkok />
         <SightBangkok />

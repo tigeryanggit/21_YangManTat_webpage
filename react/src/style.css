@@ -80,13 +80,11 @@ a:hover {
     height: var(--margin-nav);
     position: relative;
 
-
     img {
         padding: 5px;
         height: 80px;
     }
 }
-
 
 
 .nav-menu {
@@ -150,6 +148,9 @@ a:hover {
     text-align: center;
     background-color: var(--primary-6);
     color: var(--primary-white);
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
 
 
     ul {
@@ -178,11 +179,13 @@ a:hover {
     border: var(--border-test);
     padding: 0 auto;
     padding-top: var(--margin-nav);
-    display: flex;
-    flex-direction: row;
-    /* height: 100%; */
+    width:100vw;
+    /* display: flex;
+    flex-direction: row; */
+    /* height: 100%; */;
     height: calc(100vh - var(--margin-nav));
     position: relative;
+
     /* background-image: url(/img/background.png);
     /* background-position: fixed; */
     /* background-repeat: no-repeat; */
@@ -210,21 +213,24 @@ a:hover {
 
 
 .container-grid {
-    border: var(--border-test);
+    
     border: 3px solid red;
     display: grid;
     width: 80vw;
+    height:80vh;
     max-width: var(--max-width);
     margin: 10px auto;
     grid-template-columns: repeat(2,1fr);
-    align-items: center;
+
+
+    
     
     .img-main {
         margin-top: var(--margin-nav);
         /* border: var(--border-test); */
         width: 70%;
         min-width: 300px;
-        margin: 2rem;
+        margin: 2rem auto;
         /* box-shadow: var(--shadow); */
         position: relative;
         
@@ -255,7 +261,7 @@ a:hover {
     color:var(--img-text);
     font-size: 2rem;
     font-weight: 600;
-    top:calc(85%/2);
+    top:calc(70%/2);
     right: calc(85%/2);
     z-index: 1;
 
@@ -278,7 +284,7 @@ a:hover {
     content: "倫敦"; 
 }
 
-@media (max-width:600px) {
+@media (max-width:800px) {
 
     .nav-menu {
         display: none;
@@ -290,6 +296,7 @@ a:hover {
 
     .container-grid {
         grid-template-columns: repeat(1,1fr);
+        
     }
 }
 
@@ -438,7 +445,7 @@ a:hover {
 
     border: var(--border-test);
     width:100%;
-    height: 100%;
+    height: calc(100vh - var(--margin-nav));
     max-width: 700px;
     min-width: 400px;
     margin: var(--margin-nav) auto;

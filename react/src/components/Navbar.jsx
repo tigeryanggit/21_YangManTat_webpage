@@ -1,4 +1,5 @@
 import React from 'react'
+import {useState} from 'react';
 import logo from "/src/assets/Logo.png";
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import PageTokyo from "../components/PageTokyo";
@@ -8,7 +9,13 @@ import PageLondon from "../components/PageLondon";
 import Main from "../components/Main";
 import About from "../components/About";
 
-function Navbar() {
+const Navbar = () => {
+
+    const [isToggle, setToggle] = useState(false);
+    const handleToggle = () => {
+        setToggle(!isToggle);
+    };
+
   return (
 
     <BrowserRouter> 
@@ -30,10 +37,14 @@ function Navbar() {
 
 
                 <div className="nav-burger">
-                    <a href=""><i className="fa-solid fa-bars fa-2x"></i></a>
+                    <div className="mobile-menu-toggle" onClick={handleToggle}> 
+                        <i className="fa-solid fa-bars fa-2x"></i>
+                    </div>
                 </div>
 
-                <div className="mobile-list">
+                <div className={
+                    isToggle ? "mobile-list active":"mobile-list"
+                } >
                     <ul>
                                     <li><Link to="/">首頁</Link></li>
                                     <li><Link to="/tokyo">東京</Link></li>

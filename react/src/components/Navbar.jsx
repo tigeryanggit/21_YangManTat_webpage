@@ -33,6 +33,17 @@ function Navbar() {
                     <a href=""><i className="fa-solid fa-bars fa-2x"></i></a>
                 </div>
 
+                <div className="mobile-list">
+                    <ul>
+                                    <li><Link to="/">首頁</Link></li>
+                                    <li><Link to="/tokyo">東京</Link></li>
+                                    <li><Link to="/seoul">首爾</Link></li>
+                                    <li><Link to="/bangkok">曼谷</Link></li>
+                                    <li><Link to="/london">倫敦</Link></li>
+                                    <li><Link to="/about">關於</Link></li>
+                    </ul>
+                </div>
+
             </nav>
 
         <Routes>

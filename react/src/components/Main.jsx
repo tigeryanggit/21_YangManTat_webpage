@@ -15,16 +15,7 @@ function Main() {
     
         {/* <Navbar /> */}
         <main className="container-main">
-            <div className="mobile-list">
-                <ul>
-                    <li><Link to="/">首頁</Link></li>
-                    <li><Link to="/tokyo">東京</Link></li>
-                    <li><Link to="/seoul">首爾</Link></li>
-                    <li><Link to="/bangkok">曼谷</Link></li>
-                    <li><Link to="/london">倫敦</Link></li>
-                    <li><Link to="/about">關於</Link></li>
-                </ul>
-            </div>
+
 
             <div className="container-grid">
 

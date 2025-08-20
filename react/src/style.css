@@ -197,6 +197,7 @@ a:hover {
 
 .mobile-list {
     border: var(--border-test);
+    margin-top: var(--margin-nav);
     width:8rem;
     position: absolute;
     background-color: var(--primary-6);

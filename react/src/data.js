@@ -10,6 +10,10 @@ import bangkok3 from './assets/sight/Bangkok/bangkok_ss_3.png';
 import london1 from './assets/sight/London/london_ss_1.png';
 import london2 from './assets/sight/London/london_ss_2.png';
 import london3 from './assets/sight/London/london_ss_3.png';
+import carouselTokyo01 from "./assets/gallery/tokyo/tokyo01.png"
+import carouselTokyo02 from "./assets/gallery/tokyo/tokyo02.png"
+import carouselTokyo03 from "./assets/gallery/tokyo/tokyo03.png"
+import carouselTokyo04 from "./assets/gallery/tokyo/tokyo04.png"
 
 
 
@@ -131,6 +135,47 @@ export const sightsLondon =[
 
 ]
 
+
+export const CarouselTokyo =[
+    {
+        id:1,
+        image: carouselTokyo01,
+        alt: 'Tokyo01',
+        title: '',
+        description: ''
+
+    },
+
+    {
+        id:2,
+        image: carouselTokyo02,
+        alt: 'Tokyo02',
+        title: '',
+        description: ''
+
+    },
+
+    
+    {
+        id:3,
+        image: carouselTokyo03,
+        alt: 'Tokyo03',
+        title: '',
+        description: ''
+
+    },
+
+        {
+        id:4,
+        image: carouselTokyo04,
+        alt: 'Tokyo04',
+        title: '',
+        description: ''
+
+    },
+
+
+]
 
 
 

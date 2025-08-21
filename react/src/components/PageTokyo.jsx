@@ -5,7 +5,7 @@ import WeatherTokyo from './WeatherTokyo';
 import SightTokyo from './SightTokyo';
 import WebTokyo from './ＷebTokyo';
 import Footer from './Footer';
-import { Nav } from 'react-bootstrap';
+import UncontrolledExample from './Carousel';
 
 
 
@@ -19,6 +19,7 @@ function PageTokyo() {
         <HistoryTokyo />
         <WeatherTokyo />
         <SightTokyo />
+        <UncontrolledExample />
         <WebTokyo />
         <Footer /> 
         

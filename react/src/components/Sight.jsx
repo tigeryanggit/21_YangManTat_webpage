@@ -1,7 +1,4 @@
 import React from 'react'
-import tokyo1 from '../assets/sight/Tokyo/tokyo_ss_1.png';
-import tokyo2 from '../assets/sight/Tokyo/tokyo_ss_2.png';
-import tokyo3 from '../assets/sight/Tokyo/tokyo_ss_3.png';
 
 
 

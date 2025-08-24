@@ -2,7 +2,7 @@ import React from 'react'
 
 function CarouselImage({image, alt}) {
   return (
-    <div>
+    <div className='carouselimage'>
         <img src={image} alt={alt} />
     </div>
   )

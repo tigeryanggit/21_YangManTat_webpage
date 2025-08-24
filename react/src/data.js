@@ -10,22 +10,30 @@ import bangkok3 from './assets/sight/Bangkok/bangkok_ss_3.png';
 import london1 from './assets/sight/London/london_ss_1.png';
 import london2 from './assets/sight/London/london_ss_2.png';
 import london3 from './assets/sight/London/london_ss_3.png';
-import carouselTokyo01 from "./assets/gallery/tokyo/tokyo01.png"
-import carouselTokyo02 from "./assets/gallery/tokyo/tokyo02.png"
-import carouselTokyo03 from "./assets/gallery/tokyo/tokyo03.png"
-import carouselTokyo04 from "./assets/gallery/tokyo/tokyo04.png"
-import carouselSeoul01 from "./assets/gallery/seoul/seoul01.png"
-import carouselSeoul02 from "./assets/gallery/seoul/seoul02.png"
-import carouselSeoul03 from "./assets/gallery/seoul/seoul03.png"
-import carouselSeoul04 from "./assets/gallery/seoul/seoul04.png"
-import carouselBangkok01 from "./assets/gallery/bangkok/bangkok01.png"
-import carouselBangkok02 from "./assets/gallery/bangkok/bangkok02.png"
-import carouselBangkok03 from "./assets/gallery/bangkok/bangkok03.png"
-import carouselBangkok04 from "./assets/gallery/bangkok/bangkok04.png"
-import carouselLondon01 from "./assets/gallery/london/london01.png"
-import carouselLondon02 from "./assets/gallery/london/london02.png"
-import carouselLondon03 from "./assets/gallery/london/london03.png"
-import carouselLondon04 from "./assets/gallery/london/london04.png"
+import carouselTokyo01 from "./assets/gallery/tokyo/tokyo01.jpg"
+import carouselTokyo02 from "./assets/gallery/tokyo/tokyo02.jpg"
+import carouselTokyo03 from "./assets/gallery/tokyo/tokyo03.jpg"
+import carouselTokyo04 from "./assets/gallery/tokyo/tokyo04.jpg"
+import carouselTokyo05 from "./assets/gallery/tokyo/tokyo05.jpg"
+import carouselTokyo06 from "./assets/gallery/tokyo/tokyo06.jpg"
+import carouselSeoul01 from "./assets/gallery/seoul/seoul01.jpg"
+import carouselSeoul02 from "./assets/gallery/seoul/seoul02.jpg"
+import carouselSeoul03 from "./assets/gallery/seoul/seoul03.jpg"
+import carouselSeoul04 from "./assets/gallery/seoul/seoul04.jpg"
+import carouselSeoul05 from "./assets/gallery/seoul/seoul05.jpg"
+import carouselSeoul06 from "./assets/gallery/seoul/seoul06.jpg"
+import carouselBangkok01 from "./assets/gallery/bangkok/bangkok01.jpg"
+import carouselBangkok02 from "./assets/gallery/bangkok/bangkok02.jpg"
+import carouselBangkok03 from "./assets/gallery/bangkok/bangkok03.jpg"
+import carouselBangkok04 from "./assets/gallery/bangkok/bangkok04.jpg"
+import carouselBangkok05 from "./assets/gallery/bangkok/bangkok05.jpg"
+import carouselBangkok06 from "./assets/gallery/bangkok/bangkok06.jpg"
+import carouselLondon01 from "./assets/gallery/london/london01.jpg"
+import carouselLondon02 from "./assets/gallery/london/london02.jpg"
+import carouselLondon03 from "./assets/gallery/london/london03.jpg"
+import carouselLondon04 from "./assets/gallery/london/london04.jpg"
+import carouselLondon05 from "./assets/gallery/london/london05.jpg"
+import carouselLondon06 from "./assets/gallery/london/london06.jpg"
 
 export const sightsTokyo =[
     {
@@ -40,7 +48,7 @@ export const sightsTokyo =[
         id:2,
         image: tokyo2,
         title: '晴空塔',
-        content: '界第二高塔，634公尺高，360度俯瞰東京全景。晴空塔商場「Solamachi」還有寶可夢專賣店、傳統工藝品店。地鐵線押上站直達，建議提前購票避開排隊。'
+        content: '世界第二高塔，634公尺高，360度俯瞰東京全景。晴空塔商場「Solamachi」還有寶可夢專賣店、傳統工藝品店。地鐵線押上站直達，建議提前購票避開排隊。'
 
     },
     
@@ -175,7 +183,7 @@ export const CarouselTokyo =[
 
     },
 
-        {
+    {
         id:4,
         image: carouselTokyo04,
         alt: 'Tokyo04',
@@ -183,8 +191,22 @@ export const CarouselTokyo =[
         description: ''
 
     },
+    {
+        id:5,
+        image: carouselTokyo05,
+        alt: 'Tokyo05',
+        title: '',
+        description: ''
 
+    },
+    {
+        id:6,
+        image: carouselTokyo06,
+        alt: 'Tokyo06',
+        title: '',
+        description: ''
 
+    },
 ]
 
 export const CarouselSeoul =[
@@ -216,7 +238,7 @@ export const CarouselSeoul =[
 
     },
 
-        {
+    {
         id:4,
         image: carouselSeoul04,
         alt: 'Seoul04',
@@ -224,7 +246,22 @@ export const CarouselSeoul =[
         description: ''
 
     },
+    {
+        id:5,
+        image: carouselSeoul05,
+        alt: 'Seoul05',
+        title: '',
+        description: ''
 
+    },
+    {
+        id:6,
+        image: carouselSeoul06,
+        alt: 'Seoul06',
+        title: '',
+        description: ''
+
+    },
 
 ]
 
@@ -257,7 +294,7 @@ export const CarouselBangkok =[
 
     },
 
-        {
+    {
         id:4,
         image: carouselBangkok04,
         alt: 'Bangkok04',
@@ -266,6 +303,22 @@ export const CarouselBangkok =[
 
     },
 
+    {
+        id:5,
+        image: carouselBangkok05,
+        alt: 'Bangkok05',
+        title: '',
+        description: ''
+
+    },
+    {
+        id:6,
+        image: carouselBangkok06,
+        alt: 'Bangkok06',
+        title: '',
+        description: ''
+
+    },
 
 ]
 
@@ -299,7 +352,7 @@ export const CarouselLondon =[
 
     },
 
-        {
+    {
         id:4,
         image: carouselLondon04,
         alt: 'London04',
@@ -307,6 +360,21 @@ export const CarouselLondon =[
         description: ''
 
     },
+    {
+        id:5,
+        image: carouselLondon05,
+        alt: 'London05',
+        title: '',
+        description: ''
 
+    },
 
+    {
+        id:6,
+        image: carouselLondon06,
+        alt: 'London06',
+        title: '',
+        description: ''
+
+    },    
 ]

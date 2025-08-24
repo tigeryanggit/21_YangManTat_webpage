@@ -4,11 +4,14 @@ function ＷebLondon() {
   return (
             
         <>
+        <br />
+          <div className="website">
             <h2 className='title'>官方網站</h2>
             <a 
                 href="https://www.visitlondon.com/"
-                className="website"            
+                        
                 >VISIT LONDON</a>
+          </div>
         </>
   )
 }

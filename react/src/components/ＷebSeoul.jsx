@@ -4,11 +4,14 @@ function ＷebSeoul() {
   return (
             
         <>
+        <br />
+          <div className="website">
             <h2 className='title'>官方網站</h2>
             <a 
                 href="https://tchinese.visitseoul.net/"
-                className="website"            
+                      
                 >VISIT SEOUL NET</a>
+          </div>
         </>
   )
 }

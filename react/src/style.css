@@ -34,7 +34,7 @@ body {
     --primary-5:#b60312b7;
     --primary-6:darkblue;
     --primary-7:lightblue;
-    --border-test: 1px solid violet;
+    --border-test: 0px solid violet;
     --font-color: gray;
     --margin-nav:80px;
     --padding-right:20px;
@@ -251,7 +251,7 @@ a:hover {
 
 .container-grid {
     
-    border: 3px solid red;
+    border: var(--border-test);
     display: grid;
     width: 90vw;
     height: calc(100vh-var(var(--margin-nav)));
@@ -539,7 +539,15 @@ a:hover {
     font-size: 2rem;
     padding: var(--margin-nav) 0;
 
+    a {
+        cursor: pointer;
+    }
+
+    i {
+        color: red;
+    }
 }
+
 
 
 .container-carousel {
